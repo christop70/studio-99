@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+  color: #fff;
+}
+
+.bg-dark-studio {
+  --bs-bg-opacity: 1;
+  background-color: rgb(17 18 18) !important;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Global style reset */
+p {
+  margin: 0; /* Removes all margins */
+  padding: 0; /* Removes any padding */
+}
+h2.sec-title {
+  padding: 10px 30px;
+  color: #e8e8e8;
+}
+
+.footer-inside {
+  padding: 60px 0;
+}
+.footer-inside a {
+  text-decoration: none;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.footer-inside ul li {
+  padding-bottom: 20px;
+}
+
+/* Base style for the arrows, initially hidden */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0; /* Hide arrows by default */
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  color: black; /* Default color for the arrows */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  pointer-events: none; /* Prevent interaction when invisible */
+}
+
+/* Positioning for arrows */
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+/* Show the arrows and change their background color on carousel hover */
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1; /* Make arrows visible */
+  background-color: black; /* Black background on hover */
+  color: white; /* White color for better contrast */
+  pointer-events: auto; /* Allow interaction when visible */
+}
+
+/* bUTTON Background */
+button.btn.btn-dark-tou.mx-4.px-5.py-3 {
+  background: #000;
+  color: #fff;
+}
